@@ -51,7 +51,7 @@ Depending on how the effect is implemented, the above code could result in an in
 ```js
 import { Signal } from "signal-polyfill";
 
-let needsEnqueue = false;
+let needsEnqueue = true;
 
 const w = new Signal.subtle.Watcher(() => {
   if (needsEnqueue) {
